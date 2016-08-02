@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Владимир Сучков](https://up.htmlacademy.ru/htmlcss/14/user/229762).
-* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/id29644)..
+* Наставник: [Ирина Малиновская](https://up.htmlacademy.ru/htmlcss/14/user/29644)..
 
 ---
 
