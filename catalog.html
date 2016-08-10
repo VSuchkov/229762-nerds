@@ -29,30 +29,42 @@
         <div class="user-block">
           <a class="login" href="#">Вход</a>
         </div>
-        <h1>
-          Добро пожаловать в магазин готовых макетов
-        </h1>
+       
       </div>
         
     </header>
-    <main>
-      
+    <main class="container">
+      <div class="main-title">
+       <h1>
+          Добро пожаловать в магазин готовых макетов
+       </h1>
+      </div>
       <div class="column-left">
-        <div>
+        <div class="price">
           <h2>Стоимость</h2>
-          <div class="output-area">
+          <div class="price-form">
           </div>
-          <div class="grid">
-          <h2>
+        </div>  
+          <div class="filter">
+          <fieldset>
+            
+          <legend>
            Сетка:
-          </h2>
+          </legend>
+            
           <input type="radio" name="grid" id="adaptive" value="adaptive"> 
           <label for="adaptive">Адаптивная</label>
           <input type="radio" name="grid" id="fixed" value="fixed">
           <label for="fixed">Фиксированная</label>
           <input type="radio" name="grid" id="rubber" value="ruber">
           <label for="rubber">Резиновая</label>
+          </fieldset>  
           </div>
+          <div class="filter">
+          <fieldset>
+          <legend>  
+            Особенности:
+          </legend>  
           <div class="properties">
           <input type="checkbox" id="slider" checked>
           <label for="slider">Слайдер</label>
@@ -65,23 +77,32 @@
           <input type="checkbox" id="basket">
           <label for="basket">Корзина</label>
           </div>
+          </fieldset>  
             <button class="btn" type="submit">Показать</button>
           </div>
-        </div>
-        <div class="box"> 
-           <div class="row">
+        </div>        
+        <div class="catalog-item"> 
+        <div class="sort">
         <h1>
         Сортировать
         </h1>
+        <ul> 
+        <li>  
         <a class="breadcrumbs" href="#">
         По цене
         </a>
+        </li>
+        <li>  
         <a class="breadcrumbs" href="#">
         По типу
         </a>
-        <a class="breadcrumbs" href="#">
+        </li>
+        <li>  
+        <span class="breadcrumbs">
         По функционалу
-        </a>    
+        </span>
+        </li>  
+        </ul>  
       </div>
       <div class="laylot aviator">
           <div class="points"></div>
