@@ -33,20 +33,23 @@
       </div>
         
     </header>
-    <main class="container">
+    <div class="container">  
       <div class="main-title">
        <h1>
           Добро пожаловать в магазин готовых макетов
        </h1>
       </div>
+    </div>  
+    <main class="container">
+      
       <div class="column-left">
         <div class="price">
           <h2>Стоимость</h2>
           <div class="price-form">
           </div>
         </div>  
-          <div class="filter">
-          <fieldset>
+          
+          <fieldset class="filter">
             
           <legend>
            Сетка:
@@ -59,9 +62,9 @@
           <input type="radio" name="grid" id="rubber" value="ruber">
           <label for="rubber">Резиновая</label>
           </fieldset>  
-          </div>
-          <div class="filter">
-          <fieldset>
+          
+          
+          <fieldset class="filter">
           <legend>  
             Особенности:
           </legend>  
@@ -79,9 +82,9 @@
           </div>
           </fieldset>  
             <button class="btn" type="submit">Показать</button>
-          </div>
+          
         </div>        
-        <div class="catalog-item"> 
+        <div class="catalog-list"> 
         <div class="sort">
         <h1>
         Сортировать
@@ -104,17 +107,23 @@
         </li>  
         </ul>  
       </div>
-      <div class="laylot aviator">
-          <div class="points"></div>
+      </div>    
+      <div class="catalog">    
+      <div class="catalog-item">
+        <div class="points"></div>
+        <div class="aviator">
           <div class="img">
             <img src="img/aviator.jpg" width="240" height="240" alt="Авиатор">
           </div>
+        </div>  
        </div>
-       <div class="laylot sunset selected"> 
-          <div class="points"></div>
+       <div class="catalog-item selected"> 
+        <div class="points"></div>
+         <div class="surf"> 
           <div class="img">
             <img src="img/surf.jpg" width="240" height="240" alt="Сёрф">
           </div>
+         </div> 
           <div class="content">
             <h2>Sunset</h2>
             <p>Интернет-магазин с личным кабинетом</p>
@@ -123,29 +132,38 @@
             </div>
         </div>
         </div>  
-        <div class="laylot forte">
+        <div class="catalog-item">
           <div class="points"></div>
-          <div class="img">
-            <img src="img/forte.jpg" width="240" height="240" alt="Форте">
-          </div>
+            <div class="forte">
+              <div class="img">
+                <img src="img/forte.jpg" width="240" height="240" alt="Форте">
+              </div>
+            </div>      
         </div>
-        <div class="laylot modern"> 
+        <div class="catalog-item"> 
           <div class="points"></div>
-          <div class="img">
-            <img src="img/marquee.jpg" width="240" height="240" alt="Маркуи">
+            <div class="marquee">
+              <div class="img">
+                <img src="img/marquee.jpg" width="240" height="240" alt="Маркуи">
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="laylot avenue"> 
+        <div class="catalog-item"> 
           <div class="points"></div>
-          <div class="img">
-            <img src="img/avenue.jpg" width="240" height="240" alt="Авеню">
+          <div class="avenue">
+            <div class="img">
+              <img src="img/avenue.jpg" width="240" height="240" alt="Авеню">
+            </div>
           </div>
-        </div>
-        <div class="laylot dovetail">
+         </div>  
+        <div class="catalog-item">
           <div class="points"></div>
-          <div class="img">
-            <img src="img/dovetail.jpg" width="240" height="240" alt="Доветаил">
+          <div class="dovetail">
+            <div class="img">
+              <img src="img/dovetail.jpg" width="240" height="240" alt="Доветаил">
+            </div>
           </div>
+        </div> 
         </div>
             <div class="paginator">
             <a href="#" class="current" >1</a>
@@ -153,16 +171,17 @@
             <a href="#">3</a>
             <a href="#">Следующая</a>
       </div>
-      </div>
+      
+          
               
-      <div class="contacts">
-        <div>
+      <div class="map">
+        <div class="map-contacts">
           <h2>Nereds design studio</h2>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7(812)2757575</p>
           <a class="btn" href="#">Напишите нам</a>
         </div>
-        <div>
+        <div class="marker">
           <img src="img/marker-map.png" height="231" width="190" alt="Мы тут">
           <img src="img/logo map.png" height="37" width="92" alt="Нёрдс">
         </div>
@@ -174,8 +193,10 @@
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </section>
-        <b>Давайте дружить это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="footer-text">
+          <b>Давайте дружить это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
        </footer>
     
     
