@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -20,7 +22,7 @@
               <a href="#">Клиенты</a>
             </li>
             <li class="navigation-list-item">
-              <a href="#">Магазин</a>
+              <a href="catalog.html">Магазин</a>
             </li>
             <li class="navigation-list-item">
               <a href="#">Контакты</a>
@@ -28,11 +30,11 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="login" href="#">Вход</a>
+          <a class="basket" href="#">Корзина</a>
         </div>
        </div>
     </header>
-    <div class="banner">
+    <div class="slider-box">
       <div class="container clearfix">
         <div class="slider">
           <div class="slider-item-1">
@@ -43,7 +45,7 @@
               <p>
                 Математически выверенный дизайн для вашего сайта или мобильного приложения.
               </p>
-              <a href="#" class="btn-slider" >
+              <a href="#" class="btn btn-slider" >
                 Узнать больше
               </a>
             </div>  
@@ -60,7 +62,7 @@
               <p>
                 Математически выверенный дизайн для вашего сайта или мобильного приложения.
               </p>
-              <a href="#" class="btn-slider" >
+              <a href="#" class="btn btn-slider" >
                 Узнать больше
               </a>
             </div>  
@@ -76,7 +78,7 @@
               <p>
                 Математически выверенный дизайн для вашего сайта или мобильного приложения.
               </p>
-              <a href="#" class="btn-slider" >
+              <a href="#" class="btn btn-slider" >
                 Узнать больше
               </a>
             </div>  
@@ -98,7 +100,7 @@
           <p>
             Мир никогда не будет прежним после того как увидит ваш сайт!
           </p>
-          <a href="#" class="btn-web" >
+          <a href="#" class="btn btn-web" >
             Заказать
           </a>
         </div>
@@ -110,7 +112,7 @@
           <p>
             Покорите топ-10 приложений в AppStore и Google Play!
           </p>
-          <a href="#" class="btn-apps" >Заказать</a>
+          <a href="#" class="btn btn-apps" >Заказать</a>
         </div>
         <div class="services services-presentation">
           <img src="img/content-presentation.png" height="124" width="240" alt="Презентация">
@@ -120,14 +122,16 @@
           <p>
             Вы даже и не подозреваете, насколько вы изумительны!
           </p>
-          <a href="#" class="btn-presentation" >Заказать</a>
+          <a href="#" class="btn btn-presentation" >Заказать</a>
         </div>
       </div>
       <div class="about-us clearfix">
         <div class="about-us-content-left">
           <div class="title">
             <h1>
-              Мы - маленькая, но гордая дизайн-студия из Краснодара
+              Мы - маленькая, но гордая
+              <br>
+              дизайн-студия из Краснодара
             </h1>
             <p>
               Исповедуем принципы минимализма и чистоты. Ставим математический рассчет выше креатива. Работаем не покладая рук, как роботы.
@@ -180,13 +184,19 @@
           <img src="img/borodinski-friend.png" height="86" width="209" alt="Бородинский">
         </div>
       </div>
-      <div class="map clearfix">
+    </main>
+    <div class="map clearfix">
+      <div class="map-frame">
+      </div> 
+      <div сlass="container">
         <div class="map-contacts">
           <h2>
             Nerds design studio
           </h2>
           <p>
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            191186, Санкт-Петербург,
+            <br>
+            ул. Б. Конюшенная, д. 19/8
           </p>
           <p>
             тел. +7(812)2757575
@@ -200,7 +210,7 @@
           <img src="img/logo map.png" height="37" width="92" alt="Нёрдс">
         </div>
       </div>
-    </main>
+    </div>  
     <footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-social">
