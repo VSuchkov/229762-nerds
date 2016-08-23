@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
     <title>Нёрдс: каталог</title>
   </head>
   <body>
@@ -37,14 +37,15 @@
        </div>
     </header>
     <div class="banner">
-      <div class="container clearfix">
-        <div class="main-title">
-          <h1>
-            Добро пожаловать в магазин готовых макетов
-          </h1>  
-         </div>
+      <div class="container">
+        <h1 class="main-title">
+            Добро пожаловать в магазин
+            <br>
+            готовых макетов
+        </h1>  
       </div>
-    </div>  
+    </div>
+   
     <main class="container">
       <div class="columns clearfix">
         <div class="column-left">
@@ -76,7 +77,7 @@
             <legend>  
               Особенности:
             </legend>  
-            <div class="properties">
+           
               <input type="checkbox" id="slider" checked>
               <label for="slider">
                 Слайдер
@@ -97,19 +98,19 @@
               <label for="basket">
                 Корзина
               </label>
-            </div>
+            
           </fieldset>  
           <button class="btn" type="submit">
             Показать
           </button>
         </div> 
         <div class="column-right">
-          <div class="catalog-list"> 
+          <div class="catalog-filter"> 
             <div class="sort">
               <b>
                 Сортировать:
               </b>
-              <ul class="breadcrumbs"> 
+              <ul class="sort-elements"> 
               <li>  
                 <a href="#">
                   По цене
@@ -124,23 +125,28 @@
                 <span>
                   По функционалу
                 </span>
-              </li>  
-            </ul>  
+              </li>
+               
+              
+            </ul> 
+            <div class="triangles">
+			 <a class="triangle-down" href="#"></a>
+			 <a class="triangle-up" href="#"></a>
+		    </div>    
           </div>
         </div>    
         <div class="catalog clearfix">    
           <div class="catalog-item">
             <div class="aviator item-img">
-              <div class="catalog-item-background">
-                <img src="img/aviator.jpg" width="240" height="240" alt="Авиатор">
-              </div>
+              <img src="img/aviator.jpg" width="240" height="240" alt="Авиатор">
+            
             </div>  
           </div>
           <div class="catalog-item selected"> 
             <div class="surf item-img"> 
-                <div class="catalog-item-background">
+               
                   <img src="img/surf.jpg" width="240" height="240" alt="Сёрф">
-                </div>
+               
               </div> 
               <div class="catalog-item-desc">
                 <h2>
@@ -160,30 +166,30 @@
             </div>  
             <div class="catalog-item">
                 <div class="forte item-img">
-                <div class="catalog-item-background">
+                
                   <img src="img/forte.jpg" width="240" height="240" alt="Форте">
-                </div>
+                
               </div>      
             </div>
             <div class="catalog-item"> 
               <div class="marquee item-img">
-                <div class="catalog-item-background">
+               
                   <img src="img/marquee.jpg" width="240" height="240" alt="Маркуи">
-              </div>
+             
             </div>
           </div>
           <div class="catalog-item item-img"> 
             <div class="avenue item-img">
-              <div class="catalog-item-background">
+              
                 <img src="img/avenue.jpg" width="240" height="240" alt="Авеню">
-              </div>
+             
             </div>
           </div>  
           <div class="catalog-item">
             <div class="dovetail item-img">
-              <div class="catalog-item-background">
+             
                 <img src="img/dovetail.jpg" width="240" height="240" alt="Доветаил">
-              </div>
+             
             </div>
           </div> 
         </div>
