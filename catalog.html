@@ -2,204 +2,236 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>Нёрдс: каталог</title>
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <div class="logo header">
+      <div class="container clearfix">
+        <div class="logo-header">
+          <a href="index.html">
           <img src="img/logo header.png" width="139" height="56" alt="Нёрдс">
+          </a>  
         </div>
         <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Студия</a>
+          <ul class="navigation-list">
+            <li class="navigation-list-item">
+              <a href="index.html">Студия</a>
             </li>
-            <li>
+            <li class="navigation-list-item">
               <a href="#">Клиенты</a>
             </li>
-            <li>
+            <li class="navigation-list-item">
               <a href="#">Магазин</a>
             </li>
-            <li>
+            <li class="navigation-list-item">
               <a href="#">Контакты</a>
             </li>
           </ul>
         </nav>
         <div class="user-block">
-          <a href="#" class="login">Вход</a>
+          <a class="basket" href="#">Корзина</a>
         </div>
-       
-      </div>
-        
+       </div>
     </header>
-    <div class="container">  
-      <div class="main-title">
-       <h1>
-          Добро пожаловать в магазин готовых макетов
-       </h1>
+    <div class="banner">
+      <div class="container clearfix">
+        <div class="main-title">
+          <h1>
+            Добро пожаловать в магазин готовых макетов
+          </h1>  
+         </div>
       </div>
     </div>  
     <main class="container">
-      
-      <div class="column-left">
-        <div class="price">
-          <h2>Стоимость</h2>
-          <div class="price-form">
-          </div>
-        </div>  
-          
+      <div class="columns clearfix">
+        <div class="column-left">
+          <div class="price">
+            <h2>
+              Стоимость
+            </h2>
+            <div class="price-form">
+            </div>
+          </div>  
           <fieldset class="filter">
-            
-          <legend>
-           Сетка:
-          </legend>
-            
-          <input type="radio" name="grid" id="adaptive" value="adaptive"> 
-          <label for="adaptive">Адаптивная</label>
-          <input type="radio" name="grid" id="fixed" value="fixed">
-          <label for="fixed">Фиксированная</label>
-          <input type="radio" name="grid" id="rubber" value="ruber">
-          <label for="rubber">Резиновая</label>
+            <legend>
+              Сетка:
+            </legend>
+            <input type="radio" name="grid" id="adaptive" value="adaptive"> 
+            <label for="adaptive">
+              Адаптивная
+            </label>
+            <input type="radio" name="grid" id="fixed" value="fixed">
+            <label for="fixed">
+              Фиксированная
+            </label>
+            <input type="radio" name="grid" id="rubber" value="ruber">
+            <label for="rubber">
+              Резиновая
+            </label>
           </fieldset>  
-          
-          
           <fieldset class="filter">
-          <legend>  
-            Особенности:
-          </legend>  
-          <div class="properties">
-          <input type="checkbox" id="slider" checked>
-          <label for="slider">Слайдер</label>
-          <input type="checkbox" id="advantages">
-          <label for="advantages">Преимущества</label>
-          <input type="checkbox" id="news" checked>
-          <label for="news">Новости</label>
-          <input type="checkbox" id="gallery">
-          <label for="gallery">Галерея</label>
-          <input type="checkbox" id="basket">
-          <label for="basket">Корзина</label>
-          </div>
+            <legend>  
+              Особенности:
+            </legend>  
+            <div class="properties">
+              <input type="checkbox" id="slider" checked>
+              <label for="slider">
+                Слайдер
+              </label>
+              <input type="checkbox" id="advantages">
+              <label for="advantages">
+                Преимущества
+              </label>
+              <input type="checkbox" id="news" checked>
+              <label for="news">
+                Новости
+              </label>
+              <input type="checkbox" id="gallery">
+              <label for="gallery">
+                Галерея
+              </label>
+              <input type="checkbox" id="basket">
+              <label for="basket">
+                Корзина
+              </label>
+            </div>
           </fieldset>  
-            <button class="btn" type="submit">Показать</button>
-          
-        </div>        
-        <div class="catalog-list"> 
-        <div class="sort">
-        <h1>
-        Сортировать
-        </h1>
-        <ul class="breadcrumbs"> 
-        <li>  
-        <a href="#">
-        По цене
-        </a>
-        </li>
-        <li>  
-        <a href="#">
-        По типу
-        </a>
-        </li>
-        <li>  
-        <span>
-        По функционалу
-        </span>
-        </li>  
-        </ul>  
-      </div>
-      </div>    
-      <div class="catalog">    
-      <div class="catalog-item">
-        <div class="points"></div>
-        <div class="aviator">
-          <div class="img">
-            <img src="img/aviator.jpg" width="240" height="240" alt="Авиатор">
-          </div>
-        </div>  
-       </div>
-       <div class="catalog-item selected"> 
-        <div class="points"></div>
-         <div class="surf"> 
-          <div class="img">
-            <img src="img/surf.jpg" width="240" height="240" alt="Сёрф">
-          </div>
-         </div> 
-          <div class="content">
-            <h2>Sunset</h2>
-            <p>Интернет-магазин с личным кабинетом</p>
-            <div class="price-btn">
-              <button class="btn" type="submit">10000 р.</button>
-            </div>
-        </div>
-        </div>  
-        <div class="catalog-item">
-          <div class="points"></div>
-            <div class="forte">
-              <div class="img">
-                <img src="img/forte.jpg" width="240" height="240" alt="Форте">
-              </div>
-            </div>      
-        </div>
-        <div class="catalog-item"> 
-          <div class="points"></div>
-            <div class="marquee">
-              <div class="img">
-                <img src="img/marquee.jpg" width="240" height="240" alt="Маркуи">
-              </div>
-            </div>
-          </div>
-        <div class="catalog-item"> 
-          <div class="points"></div>
-          <div class="avenue">
-            <div class="img">
-              <img src="img/avenue.jpg" width="240" height="240" alt="Авеню">
-            </div>
-          </div>
-         </div>  
-        <div class="catalog-item">
-          <div class="points"></div>
-          <div class="dovetail">
-            <div class="img">
-              <img src="img/dovetail.jpg" width="240" height="240" alt="Доветаил">
-            </div>
-          </div>
+          <button class="btn" type="submit">
+            Показать
+          </button>
         </div> 
+        <div class="column-right">
+          <div class="catalog-list"> 
+            <div class="sort">
+              <b>
+                Сортировать:
+              </b>
+              <ul class="breadcrumbs"> 
+              <li>  
+                <a href="#">
+                  По цене
+                </a>
+              </li>
+              <li>  
+                <a href="#">
+                  По типу
+                </a>
+              </li>
+              <li>  
+                <span>
+                  По функционалу
+                </span>
+              </li>  
+            </ul>  
+          </div>
+        </div>    
+        <div class="catalog clearfix">    
+          <div class="catalog-item">
+            <div class="aviator item-img">
+              <div class="catalog-item-background">
+                <img src="img/aviator.jpg" width="240" height="240" alt="Авиатор">
+              </div>
+            </div>  
+          </div>
+          <div class="catalog-item selected"> 
+            <div class="surf item-img"> 
+                <div class="catalog-item-background">
+                  <img src="img/surf.jpg" width="240" height="240" alt="Сёрф">
+                </div>
+              </div> 
+              <div class="catalog-item-desc">
+                <h2>
+                  Sunset
+                </h2>
+                <p>
+                  Интернет-магазин
+                  <br>
+                  с личным кабинетом
+                </p>
+                <div class="price-btn">
+                  <button class="btn" type="submit">
+                    10000 р.
+                  </button>
+                </div>
+              </div>
+            </div>  
+            <div class="catalog-item">
+                <div class="forte item-img">
+                <div class="catalog-item-background">
+                  <img src="img/forte.jpg" width="240" height="240" alt="Форте">
+                </div>
+              </div>      
+            </div>
+            <div class="catalog-item"> 
+              <div class="marquee item-img">
+                <div class="catalog-item-background">
+                  <img src="img/marquee.jpg" width="240" height="240" alt="Маркуи">
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item item-img"> 
+            <div class="avenue item-img">
+              <div class="catalog-item-background">
+                <img src="img/avenue.jpg" width="240" height="240" alt="Авеню">
+              </div>
+            </div>
+          </div>  
+          <div class="catalog-item">
+            <div class="dovetail item-img">
+              <div class="catalog-item-background">
+                <img src="img/dovetail.jpg" width="240" height="240" alt="Доветаил">
+              </div>
+            </div>
+          </div> 
         </div>
-            <div class="paginator">
-            <a href="#" class="current" >1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">Следующая</a>
+        <div class="paginator">
+          <a href="#" class="current" >1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Следующая</a>
+        </div>
+      </div>   
+    </div>  
+  </main>
+  <div class="map clearfix">
+    <div class="map-frame">
+    </div> 
+    <div сlass="container">
+      <div class="map-contacts">
+        <h2>
+          Nerds design studio
+        </h2>
+        <p>
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>
+          тел. +7(812)2757575
+        </p>
+        <a href="#" class="btn"> 
+          Напишите нам
+        </a>
       </div>
-      
-          
-              
-      <div class="map">
-        <div class="map-contacts">
-          <h2>Nereds design studio</h2>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7(812)2757575</p>
-          <a class="btn" href="#">Напишите нам</a>
-        </div>
-        <div class="marker">
-          <img src="img/marker-map.png" height="231" width="190" alt="Мы тут">
-          <img src="img/logo map.png" height="37" width="92" alt="Нёрдс">
-        </div>
-        </div>
-      </main>
-      <footer class="main-footer">
-        <section class="footer-social">
-          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-        </section>
-        <div class="footer-text">
-          <b>Давайте дружить это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-       </footer>
-    
-    
-
-  </body>
+      <div class="marker">
+        <img src="img/marker-map.png" height="231" width="190" alt="Мы тут">
+        <img src="img/logo map.png" height="37" width="92" alt="Нёрдс">
+      </div>
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="container clearfix">
+      <section class="footer-social">
+        <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+        <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+        <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+      </section>
+      <div class="footer-text">
+        <b>Давайте дружить это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div> 
+    </div>  
+  </footer>
+</body>
 </html>
