@@ -100,12 +100,13 @@ h2 {
 
 .logo-header {
   float: left;
-  width: 300px;
+  width: 150px;
   margin-top: 23px;
+  margin-right: 100px;
 }
 
 .main-navigation {
-  width: 470px;
+  width: 500px;
   float: left;
   text-decoration: none;
 }
@@ -118,6 +119,8 @@ h2 {
   padding-left: 23px;
   padding-right: 23px;
 }
+
+
 
 .basket:hover,
 .main-navigation a:hover{
@@ -164,6 +167,7 @@ h2 {
 
 .sort {
   text-transform: uppercase;
+  position: relative;
 }
 
 
@@ -173,6 +177,31 @@ h2 {
   font-size: 12px;
   line-height: 18px;
   margin-right: 40px;
+}
+
+.triangles {
+  position: absolute;
+  top: -3px;
+  right: 0px;
+  
+}
+
+.triangle-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #00ca74;
+}
+
+.triangle-up {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #c1c1c1;
 }
 
 .user-block {
@@ -204,56 +233,159 @@ h2 {
   opacity: 0.3;
 }
 
+.basket:hover::before {
+  background: url("../img/.icon-basket copy 3.png") no-repeat;
+  background-position: 0px 0px;
+  opacity: 1;
+  
+}
+
+
+
 .slider-box {
-  background-color: #eeeeee;
+  padding-top: 50px;
+
+  background: #eeeeee;
 }
 
 .slider {
   position: relative;
+
   width: 880px;
-  height: 340px;
+  min-height: 310px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
-.slide-content {
-  float: left;
-  width: 380px;
-  padding-bottom: 79px;
-  padding-top: 75px;
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 310px;
+
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+
+  -webkit-transition: left 0.3s ease;
+     -moz-transition: left 0.3s ease;
+          transition: left 0.3s ease;
 }
 
-.slide-content p{
-  margin-bottom: 30px;
+.slider input[type="radio"] {
+  display: none;
 }
 
 .slider-controls {
   position: absolute;
   bottom: 95px;
   left: 50%;
+  z-index: 10;
+
   width: 200px;
-  height: 10px;
   margin-left: -100px;
+
   text-align: center;
-  border: 1px dotted green;
-  z-index: 1000;
 }
 
-.slider-controls i {
+.slider-controls label {
   display: inline-block;
   width: 4px;
   height: 4px;
   margin: 0 3px;
-  background: white;
-  border: 3px solid white;
+
   vertical-align: top;
+
+  background: #ffffff;
+  border: 3px solid white;
   border-radius: 50%;
   cursor: pointer;
 }
 
+.slide-text {
+  width: 500px;
+  padding: 30px 0;
+}
 
+.slide-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+}
 
-.slider-img {
-  float: right;
+.slide p {
+  font-weight: 500;
+  line-height: 22px;
+  color: #283136;
+}
+
+.slide .btn {
+  display: block;
+  width: 220px;
+  margin-top: 25px;
+  padding: 12px 10px;
+
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #fb565a;
+  border-radius: 3px;
+}
+
+.slide:nth-child(1) {
+  background-image: url("../img/platform image.png");
+}
+
+.slide:nth-child(2) {
+  background-image: url("../img/calc.png");
+}
+
+.slide:nth-child(3) {
+  background-image: url("../img/robot.png");
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  left: 0;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(2),
+#btn-1:checked ~ .slides .slide:nth-child(3) {
+  left: 880px;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(1) {
+  left: -880px;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  left: 0;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(3) {
+  left: -880px;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(1) {
+  left: -880px;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(2) {
+  left: -880px;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  left: 0;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
 }
 
 .banner {
@@ -285,6 +417,7 @@ h2 {
   float: left;
   width: 240px;
   margin-right: 80px;
+  margin-bottom: 80px;
 }
 
 .services p{
@@ -311,13 +444,34 @@ h2 {
   margin-bottom: 53px;
 }
 
+.content-list {
+  
+}
+
 .content-list h2{
   text-transform: uppercase;
 }
 
 .content-list li{
   line-height: 3;
+  list-style: none;
+  position: relative;
 }
+
+.content-list li::before {
+  
+  content: "";
+  position: absolute;
+
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  left: -40px;
+  top: 23px;
+}
+
+
+
 
 .about-us-content-right {
   float: right;
@@ -326,30 +480,61 @@ h2 {
   padding-bottom: 75px;
 }
 
+.logo-about-us {
+  padding-left: 30px;
+  width: 240px;
+}
+
+.year-open {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.year-open b {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px;
+  font-size: 16px;
+  text-align: center;
+  background: red;
+  z-index: 2;
+  background: #ffffff;
+  text-transform: uppercase;
+}
+
+.year-open::after {
+  position: relative;
+  top: -13px;
+  content: "";
+  display: block;
+  border-bottom: 2px solid #eeeeee;
+  z-index: 1;
+}
+
 .friends-list {
   min-height: 166px;
-  margin: 0 -38px 85px;
+  margin-bottom: 85px;
   border-bottom: 2px #eeeeee solid;
+  
 }
 
-.gluchanko {
-  padding-top: 67px;
+.container-for-friends {
+  margin: 0 -38px;
+  min-height: 166px;
 }
 
-.academy {
-  padding-top: 55px;
-}
 
-.borodinski {
-  padding-top: 45px;
-}
 
 .logo-friend {
   display: inline-block;
   width: 240px;
+  
   vertical-align: middle;
   margin: 0 38px;
   opacity: 0.2;
+  padding-top: 45px;
 }
 
 .logo-friend:last-child {
@@ -361,23 +546,26 @@ h2 {
 }
 
 .map {
-  padding-top: 85px; 
+  
   position: relative; 
-  height: 400px; 
+   
+}
+
+.map .container {
+  
+  position: relative; 
+   
 }
 
 .map-frame {
-  position: absolute; 
-  top: 0; 
-  left: 180px;
-  height: 400px; 
-  width: 880px;
-  background: url("../img/map.jpg") no-repeat;
+  width: 100%
 }
+
+
 
 .map-contacts {
   position: absolute;
-  float: left;
+  
   margin-top: 90px;
   margin-bottom: 90px;
   top: -2px;
@@ -629,6 +817,11 @@ input[type="radio"]:checked + label::after {
 
 .item-img {
   position: relative;
+  z-index: 3;
+}
+
+.item-img:hover {
+  z-index: 1;
 }
 
 .catalog-item::after {
@@ -668,10 +861,16 @@ input[type="radio"]:checked + label::after {
   width: 200px;
   right: 20px;
   text-align: center;
-  padding-bottom: 30px;
-  
+  height: 200px;
+  z-index: 2;
   
 }
+
+.catalog-item-desc:hover{
+  z-index: 4;
+}
+
+
 
 .catalog-item-desc h2 {
   display: block;
