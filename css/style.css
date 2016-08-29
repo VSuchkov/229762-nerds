@@ -120,6 +120,21 @@ h2 {
   padding-right: 23px;
 }
 
+.main-navigation .active {
+  position: relative;
+  background-color: none;
+}
+
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 23px;
+  left: 23px;
+  bottom: 0;
+  height: 2px;
+  background-color: #fb565a;
+}
+
 
 
 .basket:hover,
@@ -163,6 +178,7 @@ h2 {
 .sort-elements a:hover,
 .sort-elements span:hover{
   opacity: 1;
+  cursor: pointer;
 }
 
 .sort {
@@ -201,8 +217,39 @@ h2 {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid #c1c1c1;
+  border-bottom: 10px solid #00ca74;
 }
+
+.triangle-down:hover {
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #b5b5b5;
+  
+}
+
+.triangle-up:hover{
+   border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #b5b5b5;
+}
+
+.triangle-down:active {
+   border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid  #000000;
+  
+}
+
+
+
+.triangle-up:active{
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid  #000000;
+ 
+}
+
 
 .user-block {
   max-width: 105px;
@@ -692,9 +739,91 @@ h2 {
   width: 240px;
 }
 
+.range-filter {
+  width: 240px;
+  margin: 50px auto; /* для демонстрации */
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #f1f1f1;
+}
+
+.filter {
+  border: none;
+}
+
 .filter legend{
   text-transform: uppercase;
 }
+
+
 
 input[type="checkbox"]{
   display: none;
@@ -1010,6 +1139,11 @@ input[type="radio"]:checked + label::after {
 .paginator span:active{
   background: #d5d5d5; 
   box-shadow: inset 0 3px 0 0 #b5b5b5;
+  min-width: 38px;
+  height: 38px;
+  border: none;
+  line-height: 38px;
+  
 } 
 
 
