@@ -1146,7 +1146,74 @@ input[type="radio"]:checked + label::after {
   
 } 
 
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 275px;
+  padding-left: 80px;
+  padding-right: 90px;
+  padding-top: 55px;
+  width: 460px;
+  height: 415px;
+  background: #ffffff;
+  box-shadow: 0 0 30px 2px #000000;
+}
 
+
+.modal-content-close {
+  height: 41px;
+  width: 41px;
+  background: #fb565a;
+  border-radius: 50%;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 5px;
+  background-color: #ffffff;
+  top: 18px;
+  left: 8px;
+  
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.user-name input[type="text"],
+.user-mail input[type="text"] {
+  font-size: 12px;
+  line-height: 18px;
+  
+}
+
+
+.user-name {
+  float: left;
+}
+
+.user-mail {
+  float: right;
+}
+
+.letter-area {
+  float: left;
+}
 
 
 
