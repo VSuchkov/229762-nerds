@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
         <div class="logo-header">
-          <img src="img/logo header.png" width="139" height="56" alt="Нёрдс">
+          <img src="img/logo-header.png" width="139" height="56" alt="Нёрдс">
         </div>
         <nav class="main-navigation">
           <ul class="navigation-list">
-            <li class="navigation-list-item">
+            <li class="navigation-list-item active">
               <a href="#">Студия</a>
             </li>
             <li class="navigation-list-item">
@@ -33,60 +33,59 @@
           <a class="basket" href="#">Корзина</a>
         </div>
        </div>
-    </header>
-    <div class="slider-box">
-      <div class="container clearfix">
+      </header>
+      <div class="slider-box">
         <div class="slider">
-          <div class="slider-item-1">
-            <div class="slide-content">
-              <h1>
-                Долго, дорого, скурпулезно.
-              </h1>
-              <p>
-                Математически выверенный дизайн для вашего сайта или мобильного приложения.
-              </p>
-              <a href="#" class="btn btn-slider" >
-                Узнать больше
-              </a>
-            </div>  
-            <div class="slider-img">
-              <img src="img/platform image.png" height="231" width="338" alt="Гаджеты">
-            </div>  
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
           </div>
-        <!--  
-          <div class="slider-item-2">
-            <div class="slide-content">
-              <h1>
-                Долго, дорого, скурпулезно.
-              </h1>
-              <p>
-                Математически выверенный дизайн для вашего сайта или мобильного приложения.
-              </p>
-              <a href="#" class="btn btn-slider" >
-                Узнать больше
-              </a>
-            </div>  
-            <div class="slider-img">
-              <img src="img/platform image.png" height="231" width="338" alt="Гаджеты">
-            </div>  
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Долго, дорого,<br>скрупулезно</div>
+                <p>
+                  Математически выверенный дизайн
+                  <br>
+                  для вашего сайта или мобильного приложения.
+                </p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">
+                  Любите ли вы математику,
+                  <br>
+                  как любим ее мы?
+                </div>
+                <p>
+                  Нашим дизайнерам мы удаляем нейроны, ответственные
+                  <br>
+                  за креатив, чтобы дать им возможность все просчитать.
+                </p>
+                <a class="btn" href="#">
+                  Узнать больше
+                </a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">
+                  Только наркотики,
+                  <br>
+                  только хардкор!
+                </div>
+                <p>
+                  Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.
+                </p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
           </div>
-          <div class="slider-item-3">
-            <div class="slide-content">
-              <h1>
-                Долго, дорого, скурпулезно.
-              </h1>
-              <p>
-                Математически выверенный дизайн для вашего сайта или мобильного приложения.
-              </p>
-              <a href="#" class="btn btn-slider" >
-                Узнать больше
-              </a>
-            </div>  
-            <div class="slider-img">
-              <img src="img/platform image.png" height="231" width="338" alt="Гаджеты">
-            </div>  
-          </div>
-      -->
         </div>
       </div>
     </div>  
@@ -104,13 +103,15 @@
             Заказать
           </a>
         </div>
-          <div class="services services-apps">
-            <img src="img/content-apps.png" height="124" width="240" alt="Приложение">
+        <div class="services services-apps">
+          <img src="img/content-apps.png" height="124" width="240" alt="Приложение">
           <h2>
             Приложения
           </h2>
           <p>
-            Покорите топ-10 приложений в AppStore и Google Play!
+            Покорите топ-10 приложений
+            <br>
+            в AppStore и Google Play!
           </p>
           <a href="#" class="btn btn-apps" >Заказать</a>
         </div>
@@ -120,7 +121,7 @@
             Презентации
           </h2>
           <p>
-            Вы даже и не подозреваете, насколько вы изумительны!
+            Вы даже не подозреваете, насколько вы изумительны!
           </p>
           <a href="#" class="btn btn-presentation" >Заказать</a>
         </div>
@@ -129,7 +130,7 @@
         <div class="about-us-content-left">
           <div class="title">
             <h1>
-              Мы - маленькая, но гордая
+              Мы — маленькая, но гордая
               <br>
               дизайн-студия из Краснодара
             </h1>
@@ -155,62 +156,65 @@
         </div>
         </div>  
         <div class="about-us-content-right">
-          <div class="logo about-us">
-            <img src="img/logo content.png" height="75" width="187" alt="Нёрдс">
+          <div class="logo-about-us">
+            <img src="img/logo-content.png" height="75" width="187" alt="Нёрдс">
+            <br>
+          </div> 
+          <div class="year-open">
             <b>
-              Sience 2004
+              Since 2004
             </b>
-          </div>
+          </div>  
           <div class="content-list">
             <h2>
               Как мы работаем
             </h2> 
-          <ul>
-            <li>С самоотдачей 146%</li>
-            <li>Соблюдая сроки на 100%</li>
-            <li>По предоплате 50%</li>
-          </ul>
+            <ul>
+              <li>С самоотдачей 146%</li>
+              <li>Соблюдая сроки на 100%</li>
+              <li>По предоплате 50%</li>
+            </ul>
           </div>
         </div>    
       </div>
       <div class="friends-list clearfix">
-        <div class="logo-friend gluchanko">
-          <img src="img/gluchanko-friend.png" height="37" width="198" alt="Глуханко">
+        <div class="container-for-friends">
+          <div class="logo-friend gluchanko">
+            <img src="img/gluchanko-friend.png" height="37" width="198" alt="Глуханко">
+          </div>
+          <div class="logo-friend academy">
+            <img src="img/academy-friend.png" height="68" width="199" alt="HTML-академия">
+          </div >
+          <div class="logo-friend borodinski">
+            <img src="img/borodinski-friend.png" height="86" width="209" alt="Бородинский">
+          </div>
         </div>
-        <div class="logo-friend academy">
-          <img src="img/academy-friend.png" height="68" width="199" alt="HTML-академия">
-        </div >
-        <div class="logo-friend borodinski">
-          <img src="img/borodinski-friend.png" height="86" width="209" alt="Бородинский">
-        </div>
-      </div>
+      </div>    
     </main>
-    <div class="map clearfix">
-      <div class="map-frame">
-      </div> 
-      <div сlass="container">
-        <div class="map-contacts">
-          <h2>
-            Nerds design studio
-          </h2>
-          <p>
-            191186, Санкт-Петербург,
-            <br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>
-            тел. +7(812)2757575
-          </p>
-          <a href="#" class="btn"> 
-            Напишите нам
-          </a>
-        </div>
-        <div class="marker">
-          <img src="img/marker-map.png" height="231" width="190" alt="Мы тут">
-          <img src="img/logo map.png" height="37" width="92" alt="Нёрдс">
-        </div>
+    <div class="map container">
+      <div class="map-contacts">
+        <h2>
+          NЁrds design studio
+        </h2>
+        <p>
+          191186, Санкт-Петербург,
+          <br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>
+          тел. +7 (812) 275-75-75
+        </p>
+        <a href="#" class="btn message"> 
+          Напишите нам
+        </a>
       </div>
-    </div>  
+      <div class="marker">
+        <img src="img/marker-map.png" height="190" width="231" alt="Мы тут">
+      </div>
+    </div>   
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.64976571323854!2d30.32253612926436!3d59.93879487065995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472206631297" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div> 
     <footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-social">
@@ -226,7 +230,7 @@
         </section>
         <div class="footer-text">
           <b>
-            Давайте дружить это выгодно!
+            Давайте дружить, это выгодно!
           </b>
           <p>
             Скидка 10% для друзей из социальных сетей.
@@ -234,5 +238,78 @@
         </div> 
       </div>  
     </footer>
-  </body>
+  
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">
+        Закрыть
+      </button>
+      
+      <form class="login-form clearfix" action="https://echo.htmlacafemy.ru" method="post">
+        <div class="user-name">
+          <label for="name">Ваше имя:</label>
+          <br>  
+          <input class="login-user" type="text" name="login" placeholder="представьтесь, пожалуйста" id="name">
+        </div>  
+        <div class="user-mail">
+          <label for="mail">Ваш e-mail:</label>  
+          <input class="mail-user" type="email" name="mail" placeholder="для отправки ответа" id="mail">
+        </div>
+          <label for="letter">Текст письма:</label>
+          <br>
+          <textarea name="comment" class="letter" id="letter" rows="5">
+            в свободной форме
+          </textarea>
+        <button type="submit" value="Отправить" class="btn"> Отправить
+        </button>
+      </form>  
+    </div>
+   <script>
+    var link = document.querySelector(".message");
+    var popup = document.querySelector(".modal-content");
+    var close = popup.querySelector(".modal-content-close");
+    var form = popup.querySelector("form");
+    var login = popup.querySelector("[name=login]");
+    var mail = popup.querySelector("[name=email]");
+    var storage = localStorage.getItem("login");
+
+    link.addEventListener("click", function(event) {
+   	event.preventDefault();
+   	popup.classList.add("modal-content-show");
+    if (storage)
+    { login.value = storage; mail.focus();
+        } else {
+          login.focus();
+        }
+
+   	 login.focus();
+
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function(event) {
+   	    if (!login.value || !mail.value) {
+        event.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
+        } else {
+        localStorage.setItem("login", login.value); 
+        }
+      });
+
+        window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+        if (popup.classList.contains("modal-content-show")) {
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+          }
+        }
+      });
+    </script>
+   </body>
 </html>

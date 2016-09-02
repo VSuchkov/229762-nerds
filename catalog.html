@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
     <title>Нёрдс: каталог</title>
   </head>
   <body>
@@ -12,7 +12,7 @@
       <div class="container clearfix">
         <div class="logo-header">
           <a href="index.html">
-          <img src="img/logo header.png" width="139" height="56" alt="Нёрдс">
+            <img src="img/logo-header.png" width="139" height="56" alt="Нёрдс">
           </a>  
         </div>
         <nav class="main-navigation">
@@ -23,7 +23,7 @@
             <li class="navigation-list-item">
               <a href="#">Клиенты</a>
             </li>
-            <li class="navigation-list-item">
+            <li class="navigation-list-item active">
               <a href="#">Магазин</a>
             </li>
             <li class="navigation-list-item">
@@ -37,14 +37,14 @@
        </div>
     </header>
     <div class="banner">
-      <div class="container clearfix">
-        <div class="main-title">
-          <h1>
-            Добро пожаловать в магазин готовых макетов
-          </h1>  
-         </div>
+      <div class="container">
+        <h1 class="main-title">
+            Добро пожаловать в магазин
+            <br>
+            готовых макетов
+        </h1>  
       </div>
-    </div>  
+    </div>
     <main class="container">
       <div class="columns clearfix">
         <div class="column-left">
@@ -53,8 +53,28 @@
               Стоимость
             </h2>
             <div class="price-form">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%">
+                  </div>
+                </div>
+                <div class="toggle toggle-min">
+                </div>
+                <div class="toggle toggle-max">
+                </div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от
+                <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">
+                  до
+                <input name="max-price" type="text" value="15000"></label>
+              </div>
             </div>
-          </div>  
+            </div>
+          </div> 
           <fieldset class="filter">
             <legend>
               Сетка:
@@ -76,14 +96,13 @@
             <legend>  
               Особенности:
             </legend>  
-            <div class="properties">
               <input type="checkbox" id="slider" checked>
               <label for="slider">
                 Слайдер
               </label>
               <input type="checkbox" id="advantages">
               <label for="advantages">
-                Преимущества
+                Блок преимуществ
               </label>
               <input type="checkbox" id="news" checked>
               <label for="news">
@@ -97,20 +116,19 @@
               <label for="basket">
                 Корзина
               </label>
-            </div>
           </fieldset>  
           <button class="btn" type="submit">
             Показать
           </button>
         </div> 
         <div class="column-right">
-          <div class="catalog-list"> 
+          <div class="catalog-filter"> 
             <div class="sort">
               <b>
                 Сортировать:
               </b>
-              <ul class="breadcrumbs"> 
-              <li>  
+              <ul class="sort-elements"> 
+              <li>        
                 <a href="#">
                   По цене
                 </a>
@@ -124,33 +142,48 @@
                 <span>
                   По функционалу
                 </span>
-              </li>  
-            </ul>  
+              </li>
+             </ul> 
+             <div class="triangles">
+			   <a class="triangle-down" href="#"></a>
+			   <a class="triangle-up" href="#"></a>
+		    </div>  
           </div>
         </div>    
         <div class="catalog clearfix">    
           <div class="catalog-item">
             <div class="aviator item-img">
-              <div class="catalog-item-background">
-                <img src="img/aviator.jpg" width="240" height="240" alt="Авиатор">
+              <img src="img/aviator.jpg" width="240" height="240" alt="Авиатор">
+              <div class="catalog-item-desc">
+                <h2>
+                  Aviator
+                </h2>
+                <p>
+                  Одностраничный макет 
+                  <br>
+                  с авторским дизайном
+                </p>
+                <div class="price-btn">
+                  <button class="btn" type="submit">
+                    8000 р.
+                  </button>
+                </div>
               </div>
             </div>  
           </div>
-          <div class="catalog-item selected"> 
+          <div class="catalog-item"> 
             <div class="surf item-img"> 
-                <div class="catalog-item-background">
-                  <img src="img/surf.jpg" width="240" height="240" alt="Сёрф">
-                </div>
-              </div> 
-              <div class="catalog-item-desc">
-                <h2>
-                  Sunset
-                </h2>
-                <p>
-                  Интернет-магазин
-                  <br>
-                  с личным кабинетом
-                </p>
+              <img src="img/surf.jpg" width="240" height="240" alt="Сёрф">
+            </div> 
+            <div class="catalog-item-desc">
+              <h2>
+                Sunset
+              </h2>
+              <p>
+                Интернет-магазин
+                <br>
+                с личным кабинетом
+              </p>
                 <div class="price-btn">
                   <button class="btn" type="submit">
                     10000 р.
@@ -159,30 +192,82 @@
               </div>
             </div>  
             <div class="catalog-item">
-                <div class="forte item-img">
-                <div class="catalog-item-background">
-                  <img src="img/forte.jpg" width="240" height="240" alt="Форте">
+              <div class="forte item-img">
+                <img src="img/forte.jpg" width="240" height="240" alt="Форте">
+              </div> 
+              <div class="catalog-item-desc">
+                <h2>
+                  Forte
+                </h2>
+                <p>
+                  Отличный макет
+                  <br>
+                  для личного блога
+                </p>
+                <div class="price-btn">
+                  <button class="btn" type="submit">
+                    5000 р.
+                  </button>
                 </div>
-              </div>      
+              </div>
             </div>
             <div class="catalog-item"> 
               <div class="marquee item-img">
-                <div class="catalog-item-background">
-                  <img src="img/marquee.jpg" width="240" height="240" alt="Маркуи">
+                <img src="img/marquee.jpg" width="240" height="240" alt="Маркуи">
               </div>
-            </div>
+              <div class="catalog-item-desc">
+                <h2>
+                  Modern organic thai
+                </h2>
+                <p>
+                  Сайт для ресторана
+                  <br>
+                  быстрого питания
+                </p>
+                <div class="price-btn">
+                  <button class="btn" type="submit">
+                    12000 р.
+                  </button>
+                </div>
+              </div>
           </div>
           <div class="catalog-item item-img"> 
             <div class="avenue item-img">
-              <div class="catalog-item-background">
-                <img src="img/avenue.jpg" width="240" height="240" alt="Авеню">
+              <img src="img/avenue.jpg" width="240" height="240" alt="Авеню">
+            </div>
+            <div class="catalog-item-desc">
+              <h2>
+                Avenue
+              </h2>
+              <p>
+                Макет для блога
+                <br>
+                о путешествиях
+              </p>
+              <div class="price-btn">
+                <button class="btn" type="submit">
+                  8000 р.
+                </button>
               </div>
             </div>
           </div>  
           <div class="catalog-item">
             <div class="dovetail item-img">
-              <div class="catalog-item-background">
-                <img src="img/dovetail.jpg" width="240" height="240" alt="Доветаил">
+             <img src="img/dovetail.jpg" width="240" height="240" alt="Доветаил">
+              <div class="catalog-item-desc">
+                <h2>
+                  Dovetail
+                </h2>
+                <p>
+                  Интернет-магазин
+                  <br>
+                  с галереей товаров
+                </p>
+                <div class="price-btn">
+                  <button class="btn" type="submit">
+                    14000 р.
+                  </button>
+                </div>
               </div>
             </div>
           </div> 
@@ -196,30 +281,30 @@
       </div>   
     </div>  
   </main>
-  <div class="map clearfix">
-    <div class="map-frame">
-    </div> 
-    <div сlass="container">
-      <div class="map-contacts">
-        <h2>
-          Nerds design studio
-        </h2>
-        <p>
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>
-          тел. +7(812)2757575
-        </p>
-        <a href="#" class="btn"> 
-          Напишите нам
-        </a>
-      </div>
-      <div class="marker">
-        <img src="img/marker-map.png" height="231" width="190" alt="Мы тут">
-        <img src="img/logo map.png" height="37" width="92" alt="Нёрдс">
-      </div>
+  <div class="map container">
+    <div class="map-contacts">
+      <h2>
+        NЁrds design studio
+      </h2>
+      <p>
+        191186, Санкт-Петербург,
+        <br>
+        ул. Б. Конюшенная, д. 19/8
+      </p>
+      <p>
+        тел. +7 (812) 275-75-75
+      </p>
+      <a href="#" class="btn message"> 
+        Напишите нам
+      </a>
     </div>
-  </div>
+    <div class="marker">
+      <img src="img/marker-map.png" height="190" width="231" alt="Мы тут">
+    </div>
+  </div>   
+  <div class="map-frame">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.64976571323854!2d30.32253612926436!3d59.93879487065995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472206631297" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>   
   <footer class="main-footer">
     <div class="container clearfix">
       <section class="footer-social">
@@ -228,10 +313,82 @@
         <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
       </section>
       <div class="footer-text">
-        <b>Давайте дружить это выгодно!</b>
+        <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div> 
     </div>  
   </footer>
-</body>
+  <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">
+        Закрыть
+      </button>
+      
+      <form class="login-form clearfix" action="https://echo.htmlacafemy.ru" method="post">
+        <div class="user-name">
+          <label for="name">Ваше имя:</label>
+          <br>  
+          <input class="login-user" type="text" name="login" placeholder="представьтесь, пожалуйста" id="name">
+        </div>  
+        <div class="user-mail">
+          <label for="mail">Ваш e-mail:</label>  
+          <input class="mail-user" type="email" name="mail" placeholder="для отправки ответа" id="mail">
+        </div>
+          <label for="letter">Текст письма:</label>
+          <br>
+          <textarea name="comment" class="letter" id="letter" rows="5">
+            в свободной форме
+          </textarea>
+        <button type="submit" value="Отправить" class="btn"> Отправить
+        </button>
+      </form>  
+    </div>
+    <script>
+    var link = document.querySelector(".message");
+    var popup = document.querySelector(".modal-content");
+    var close = popup.querySelector(".modal-content-close");
+    var form = popup.querySelector("form");
+    var login = popup.querySelector("[name=login]");
+    var mail = popup.querySelector("[name=email]");
+    var storage = localStorage.getItem("login");
+
+    link.addEventListener("click", function(event) {
+   	event.preventDefault();
+   	popup.classList.add("modal-content-show");
+    if (storage)
+    { login.value = storage; mail.focus();
+        } else {
+          login.focus();
+        }
+
+   	 login.focus();
+
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function(event) {
+   	    if (!login.value || !mail.value) {
+        event.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
+        } else {
+        localStorage.setItem("login", login.value); 
+        }
+      });
+
+        window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+        if (popup.classList.contains("modal-content-show")) {
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+          }
+        }
+      });
+      </script>
+   </body>
 </html>
