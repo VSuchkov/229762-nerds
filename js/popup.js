@@ -1,6 +1,3 @@
-
-
-
 var link = document.querySelector(".message");
 var popup = document.querySelector(".modal-content");
 var close = popup.querySelector(".modal-content-close");
@@ -38,7 +35,7 @@ if (event.keyCode === 27) {
 if (popup.classList.contains("modal-content-show")) {
 popup.classList.remove("modal-content-show");
 popup.classList.remove("modal-error");
-      }
     }
-  });
+  }
+});
   
