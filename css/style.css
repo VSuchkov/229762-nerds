@@ -112,6 +112,11 @@ h2 {
   margin-right: -4px;
 }
 
+.sort-elements .active {
+  opacity: 1;
+  border: none;
+}
+
 .sort-elements span,
 .sort-elements a {
   text-decoration: none;
@@ -125,6 +130,13 @@ h2 {
 .sort-elements span:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.sort-elements a:active,
+.sort-elements span:active {
+  opacity: 1;
+  cursor: pointer;
+  border: none;
 }
 
 .sort {
@@ -165,7 +177,7 @@ h2 {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid #00ca74;
+  border-bottom: 10px solid #c1c1c1;
   vertical-align: top;
 }
 
@@ -512,13 +524,16 @@ h2 {
   min-height: 166px;
 }
 
-.logo-friend {
-  display: inline-block;
-  width: 240px;
-  vertical-align: middle;
-  margin: 0 38px;
-  opacity: 0.2;
-  margin-top: 39px;
+
+
+ .logo-friend { 
+display: inline-block; 
+width: 240px; 
+vertical-align: middle; 
+margin: 0 34px; 
+opacity: 0.2; 
+margin-top: 39px; 
+text-align: center; 
 }
 
 
@@ -535,11 +550,15 @@ h2 {
 }
 
 .map {
-  position: relative; 
+  position: relative;
+  background: transparent
+ url("../img/map.jpg") no-repeat;
+  background-position: 35px 1px; 
+  z-index: -2;
 }
 
 .map .container {
-  position: relative; 
+  position: relative;   
 }
 
 .map-frame {
@@ -589,8 +608,11 @@ h2 {
   width: 231px;
   height: 190px;
   position: absolute;
-  right: -20px;
+  right: 160px;
   top: 112px;
+  background: transparent
+ url("../img/marker-map.png") no-repeat;
+  z-index: -2;
 }
 
 
@@ -648,15 +670,15 @@ h2 {
 }
 
 .social-btn-vk {
-  background-position: -8px -579px;
+  background-position: -7px -580px;
 }
 .social-btn-fb {
-  background-position: 2px -442px;
+  background-position: 0px -440px;
 }
 
 .social-btn-inst:hover {
   margin-right: 0;
-  background-position: -3px -512px;
+  background-position: -3px -513px;
 }
 
 .social-btn-vk:hover {
@@ -668,7 +690,7 @@ h2 {
 
 .social-btn-inst:active {
   margin-right: 0;
-  background-position: -3px -512px;
+  background-position: -3px -513px;
 }
 
 .social-btn-vk:active {
@@ -678,6 +700,67 @@ h2 {
 .social-btn-fb:active {
   background-position: 0px -440px;
 }
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-basket {
+    width: 15px;
+    height: 15px;
+    background-position: -25px -25px;
+}
+
+.sprite-icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -25px -90px;
+}
+
+.sprite-icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -25px -163px;
+}
+
+.sprite-icon-circle {
+    width: 25px;
+    height: 25px;
+    background-position: -25px -236px;
+}
+
+.sprite-icon-circle-dot {
+    width: 25px;
+    height: 25px;
+    background-position: -25px -311px;
+}
+
+.sprite-icon-circle-dot {
+    width: 25px;
+    height: 25px;
+    background-position: -25px -386px;
+}
+
+.sprite-icon-facebook {
+    width: 12px;
+    height: 22px;
+    background-position: -25px -461px;
+}
+
+.sprite-icon-instagramm {
+    width: 21px;
+    height: 21px;
+    background-position: -25px -533px;
+}
+
+.sprite-icon-vk {
+    width: 26px;
+    height: 15px;
+    background-position: -25px -604px;
+}
+
 
 .column-left {
   float: left;
@@ -897,12 +980,14 @@ input[type="radio"]:checked + label::after {
   position: relative;
 }
 
+
+
 .catalog-item:hover {
   border-top: 30px solid #797979;
 }
 
 .paginator {
-  margin-left: 23px;
+  margin-left: 21px;
 }
 
 .item-img {
@@ -948,7 +1033,8 @@ input[type="radio"]:checked + label::after {
   right: 20px;
   text-align: center;
   height: 200px;
-  
+  box-sizing: border-box;
+  max-height: 200px;
 }
 
 
@@ -978,15 +1064,18 @@ input[type="radio"]:checked + label::after {
   margin-top: -4px;
 }
 
-.catalog-item-desc .price-btn {
-  padding: 10px;
-  width: 140px;
-  font-size: 18px;
-  letter-spacing: 0.2px;
-  margin-top: 3px;
-  margin-left: 2px;
-  padding-left: 15px;
-  
+
+.catalog-item-desc .price-btn { 
+position: absolute; 
+bottom: 30px; 
+left: 50%; 
+padding: 10px; 
+width: 140px; 
+font-size: 18px; 
+letter-spacing: 0.2px; 
+margin-top: 3px; 
+margin-left: -70px;
+text-align: center; 
 }
 
 .marquee h2 {
@@ -1099,6 +1188,21 @@ input[type="radio"]:checked + label::after {
   line-height: 34px;
 }
 
+.paginator a:first-child:hover {
+  background-color: #ffffff;
+  border: 2px #f1f1f1 solid;
+  min-width: 34px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.paginator a:first-child:active {
+  background-color: #ffffff;
+  border: 2px #f1f1f1 solid;
+  min-width: 34px;
+  height: 34px;
+  line-height: 34px;
+}
 
 
 
