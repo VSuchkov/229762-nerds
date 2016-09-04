@@ -553,7 +553,7 @@ text-align: center;
   position: relative;
   background: transparent
  url("../img/map.jpg") no-repeat;
-  background-position: 35px 1px; 
+  background-position: 246px 1px; 
   z-index: -2;
 }
 
@@ -608,11 +608,12 @@ text-align: center;
   width: 231px;
   height: 190px;
   position: absolute;
-  right: 160px;
-  top: 112px;
+  right: 372px;
+  top: 114px;
   background: transparent
  url("../img/marker-map.png") no-repeat;
-  z-index: -2;
+  z-index: 0;
+  display: none;
 }
 
 
