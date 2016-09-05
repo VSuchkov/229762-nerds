@@ -50,7 +50,7 @@ h2 {
 }
 
 .main-navigation {
-  width: 450px;
+  width: 470px;
   float: left;
   text-decoration: none;
   margin-left: 50px;
@@ -116,6 +116,7 @@ h2 {
   opacity: 1;
   border: none;
 }
+
 
 .sort-elements span,
 .sort-elements a {
@@ -440,7 +441,7 @@ h2 {
 }
 
 .title h1 {
-  margin-bottom: 21px;
+  margin-bottom: 16px;
   letter-spacing: 0.1px;
 }
 
@@ -456,7 +457,7 @@ h2 {
 .content-list li {
   list-style: none;
   position: relative;
-  line-height: 45px;
+  line-height: 44px;
 }
 
 .content-list li::before {
@@ -475,7 +476,7 @@ h2 {
 .about-us-content-right {
   float: right;
   width: 240px;
-  padding-top: 61px;
+  padding-top: 58px;
   padding-bottom: 45px;
 }
 
@@ -553,8 +554,7 @@ text-align: center;
   position: relative;
   background: transparent
  url("../img/map.jpg") no-repeat;
-  background-position: 246px 1px; 
-  z-index: -2;
+  background-position: 353px 1px; 
 }
 
 .map .container {
@@ -602,20 +602,6 @@ text-align: center;
 .map-contacts h2 {
   letter-spacing: 0.1px;
 }
-
-.marker {
-  float: right;
-  width: 231px;
-  height: 190px;
-  position: absolute;
-  right: 372px;
-  top: 114px;
-  background: transparent
- url("../img/marker-map.png") no-repeat;
-  z-index: 0;
-  display: none;
-}
-
 
 .footer-social {
   float: left;
@@ -1028,14 +1014,15 @@ input[type="radio"]:checked + label::after {
 .catalog-item-desc {
   overflow: hidden;
   position: absolute;
-  top: 20px;
+  top: 21px;
   background-color: #ffffff;
   width: 200px;
-  right: 20px;
+  right: 19px;
   text-align: center;
   height: 200px;
   box-sizing: border-box;
   max-height: 200px;
+  text-overflow: ellipsis;
 }
 
 
@@ -1052,8 +1039,10 @@ input[type="radio"]:checked + label::after {
   display: block;
   text-transform: uppercase;
   font-size: 18px;
-  margin-top: 36px;
+  margin-top: 34px;
   margin-bottom: 16px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .catalog-item-desc p {
@@ -1063,6 +1052,11 @@ input[type="radio"]:checked + label::after {
   letter-spacing: -0,2px;
   margin-left: 5px;
   margin-top: -4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 50px;
+  width: 162px;
+  margin-left: 20px;
 }
 
 
@@ -1198,11 +1192,12 @@ text-align: center;
 }
 
 .paginator a:first-child:active {
-  background-color: #ffffff;
+   background-color: #ffffff;
   border: 2px #f1f1f1 solid;
   min-width: 34px;
   height: 34px;
   line-height: 34px;
+  box-shadow: none;
 }
 
 
