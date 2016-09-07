@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
     <title>Нёрдс: каталог</title>
   </head>
   <body>
@@ -48,78 +48,80 @@
     <main class="container">
       <div class="columns clearfix">
         <div class="column-left">
-          <div class="price">
-            <h2>
-              Стоимость
-            </h2>
-            <div class="price-form">
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar" style="margin-left: 10%; width: 60%">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <div class="price">
+              <h2>
+                Стоимость
+              </h2>
+              <div class="price-form">
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="margin-left: 10%; width: 60%">
+                      </div>
+                    </div>
+                    <div class="toggle toggle-min">
+                    </div>
+                    <div class="toggle toggle-max">
                     </div>
                   </div>
-                  <div class="toggle toggle-min">
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от
+                    <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">
+                      до
+                    <input name="max-price" type="text" value="15000">  </label>
                   </div>
-                  <div class="toggle toggle-max">
-                  </div>
-                </div>
-                <div class="price-controls">
-                  <label class="min-price">
-                    от
-                  <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">
-                    до
-                  <input name="max-price" type="text" value="15000">  </label>
                 </div>
               </div>
-            </div>
-          </div> 
-          <fieldset class="filter">
-            <legend>
-              Сетка:
-            </legend>
-            <input type="radio" name="grid" id="adaptive" value="adaptive" checked> 
-            <label for="adaptive">
-              Адаптивная
-            </label>
-            <input type="radio" name="grid" id="fixed" value="fixed">
-            <label for="fixed">
-              Фиксированная
-            </label>
-            <input type="radio" name="grid" id="rubber" value="ruber">
-            <label for="rubber">
-              Резиновая
-            </label>
-          </fieldset>  
-          <fieldset class="filter">
-            <legend>  
-              Особенности:
-            </legend>  
-            <input type="checkbox" id="slider" checked>
-            <label for="slider">
-              Слайдер
-            </label>
-            <input type="checkbox" id="advantages">
-            <label for="advantages">
-              Блок преимуществ
-            </label>
-            <input type="checkbox" id="news" checked>
-            <label for="news">
-              Новости
-            </label>
-            <input type="checkbox" id="gallery">
-            <label for="gallery">
-              Галерея
-            </label>
-            <input type="checkbox" id="basket">
-            <label for="basket">
-              Корзина
-            </label>
-          </fieldset>  
-          <button class="btn" type="submit">
-            Показать
-          </button>
+            </div> 
+            <fieldset class="filter">
+              <legend>
+                Сетка:
+              </legend>
+              <input type="radio" name="grid" id="adaptive" value="adaptive" checked> 
+              <label for="adaptive">
+                Адаптивная
+              </label>
+              <input type="radio" name="grid" id="fixed" value="fixed">
+              <label for="fixed">
+                Фиксированная
+              </label>
+              <input type="radio" name="grid" id="rubber" value="ruber">
+              <label for="rubber">
+                Резиновая
+              </label>
+            </fieldset>  
+            <fieldset class="filter">
+              <legend>  
+                Особенности:
+              </legend>  
+              <input type="checkbox" id="slider" checked>
+              <label for="slider">
+                Слайдер
+              </label>
+              <input type="checkbox" id="advantages">
+              <label for="advantages">
+                Блок преимуществ
+              </label>
+              <input type="checkbox" id="news" checked>
+              <label for="news">
+                Новости
+              </label>
+              <input type="checkbox" id="gallery">
+              <label for="gallery">
+                Галерея
+              </label>
+              <input type="checkbox" id="basket">
+              <label for="basket">
+                Корзина
+              </label>
+            </fieldset>  
+            <button class="btn" type="submit">
+              Показать
+            </button>
+          </form>  
         </div> 
         <div class="column-right">
           <div class="catalog-filter"> 
@@ -163,9 +165,9 @@
                 <p>
                   Одностраничный макет с авторским дизайном
                 </p>
-                <button class="price-btn btn" type="submit">
+                <a href="#" class="price-btn btn">
                   8000 р.
-                </button>
+                </a>
               </div>
             </div>  
           </div>
@@ -182,9 +184,9 @@
               <p>
                 Интернет-магазин с личным кабинетом
               </p>
-              <button class="price-btn btn" type="submit">
+              <a href="#" class="price-btn btn">
                 10000 р.
-              </button>
+              </a>
             </div>
           </div>  
           <div class="catalog-item">
@@ -200,9 +202,9 @@
               <p>
                 Отличный макет для личного блога
               </p>
-              <button class="price-btn btn" type="submit">
+              <a href="#" class="price-btn btn">
                 5000 р.
-              </button>
+              </a>
             </div>
           </div>
           <div class="catalog-item"> 
@@ -218,9 +220,9 @@
               <p>
                 Сайт для ресторана быстрого питания
               </p>
-              <button class="price-btn btn" type="submit">
+              <a href="#" class="price-btn btn">
                 12000 р.
-              </button>
+              </a>
             </div>
           </div>
           <div class="catalog-item"> 
@@ -236,9 +238,9 @@
               <p>
                 Макет для блога о путешествиях
                </p>
-               <button class="price-btn btn" type="submit">
+               <a href class="price-btn btn">
                  8000 р.
-                </button>
+                </a>
               </div>
             </div>  
             <div class="catalog-item">
@@ -253,9 +255,9 @@
                 <p>
                   Интернет-магазин с галереей товаров
                 </p>
-                <button class="price-btn btn" type="submit">
+                <a href="#" class="price-btn btn">
                   14000 р.
-                </button>
+                </a>
               </div>
             </div>
           </div> 
@@ -286,7 +288,7 @@
         <p>
           тел. +7 (812) 275-75-75
         </p>
-        <a href="form.html" class="btn message"> 
+        <a href="/form.html" class="btn message"> 
           Напишите нам
         </a>
       </div>
@@ -334,6 +336,6 @@
         </button>
       </form>  
     </div>
-   <script src="js/popup.js"></script>
+   <script src="js/popup-min.js"></script>
   </body>
 </html>

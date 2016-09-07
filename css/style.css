@@ -4,6 +4,7 @@
   display: table;
   clear: both;
 }
+/*стили*/
 body {
   font-size: 16px;
   line-height: 22px;
@@ -41,7 +42,7 @@ h2 {
 .logo-header {
   float: left;
   width: 150px;
-  margin-top: 25px;
+  margin-top: 26px;
   margin-right: 100px;
   margin-left: 2px;
 }
@@ -55,8 +56,8 @@ h2 {
   display: block;
   text-decoration: none;
   color: #000000;
-  padding-top: 50px;
-  padding-left: 22px;
+  padding-top: 53px;
+  padding-left: 21px;
   padding-right: 23px;
 }
 .main-navigation .active {
@@ -180,7 +181,7 @@ h2 {
   position: relative;
   display: inline-block;
   vertical-align: bottom;
-  padding-top: 50px;
+  padding-top: 53px;
   padding-left: 40px;
   text-decoration: none;
   color: #000000;
@@ -201,6 +202,7 @@ h2 {
   opacity: 1;
 }
 .slider-box {
+  padding: 0 10px;
   padding-top: 38px;
   background: #eeeeee;
 }
@@ -264,8 +266,8 @@ h2 {
 .slide .btn {
   display: block;
   width: 220px;
-  margin-top: 29px;
-  padding: 11px 10px;
+  margin-top: 26px;
+  padding: 10px;
   font-weight: 300;
   font-size: 12px;
   text-align: center;
@@ -331,7 +333,7 @@ h2 {
 }
 .services-content {
   border-bottom: 2px #eeeeee solid;
-  margin-top: 80px;
+  margin-top: 79px;
 }
 .services {
   float: left;
@@ -345,7 +347,7 @@ h2 {
 }
 .services p {
   font-size: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 .services:nth-child(3n) {
   margin-right: 0;
@@ -356,14 +358,14 @@ h2 {
 .about-us-content-left {
   float: left;
   width: 580px;
-  padding-top: 50px;
+  padding-top: 46px;
 }
 .title {
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 }
 .title h1 {
   margin-bottom: 19px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.7px;
 }
 .content-list h2 {
   text-transform: uppercase;
@@ -389,7 +391,7 @@ h2 {
 .about-us-content-right {
   float: right;
   width: 240px;
-  padding-top: 63px;
+  padding-top: 59px;
   padding-bottom: 45px;
 }
 .logo-about-us {
@@ -398,7 +400,7 @@ h2 {
 }
 .year-open {
   margin-top: 21px;
-  margin-bottom: 64px;
+  margin-bottom: 63px;
   text-align: center;
 }
 .year-open b {
@@ -450,7 +452,7 @@ text-align: center;
 .map {
   position: relative;
   background: transparent url("../img/map.jpg") no-repeat;
-  background-position: 353px 1px; 
+  background-position: 101px 1px; 
 }
 .map .container {
   position: relative;   
@@ -462,15 +464,15 @@ text-align: center;
   position: absolute;
   margin-top: 102px;
   margin-bottom: 90px;
-  top: -431px;
+  top: -437px;
   left: 10px;
   padding-bottom: 5px;
   height: 220px;
-  padding-top: 14px;
-  padding-left: 21px;
-  padding-right: 22px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 23px;
   background-color: #ffffff;
-  width: 210px;
+  width: 207px;
 }
 .map-contacts .btn {
   line-height: 20px;
@@ -479,12 +481,12 @@ text-align: center;
   height: 12px;
   padding-top: 9px;
   padding-bottom: 17px;
-  margin-top: 28px;
+  margin-top: 29px;
   margin-left: 3px;
-  width: 121px;
+  width: 124px;
 }
 .map-contacts p {
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   line-height: 20px;
 }
 .map-contacts h2 {
@@ -492,13 +494,13 @@ text-align: center;
 }
 .footer-social {
   float: left;
-  margin-top: 75px;
+  margin-top: 70px;
   margin-bottom: 75px;
   width: 250px;
 }
 .footer-text {
   float: right;
-  margin-top: 74px;
+  margin-top: 68px;
   width: 560px;
 }
 .footer-text b {
@@ -822,6 +824,7 @@ input[type="radio"]:checked + label::after {
 }
 .catalog-item-desc .price-btn { 
   position: absolute; 
+  color: #ffffff;
   bottom: 30px; 
   left: 50%; 
   padding: 10px; 
@@ -861,7 +864,7 @@ input[type="radio"]:checked + label::after {
   font-size: 12px;
   line-height: 18px;
   font-family: "Roboto", "Arial", sans-serif;
-  padding: 11px 41px;
+  padding: 12px 40px;
   vertical-align: top;
   text-align: center;
   border: none;
@@ -912,6 +915,7 @@ input[type="radio"]:checked + label::after {
   color: #000000;
   margin: 0;
   margin-right: 7px;
+  margin-bottom: 7px;
   text-transform: uppercase;
 }
 .paginator a:last-child {
@@ -1076,19 +1080,3 @@ input[type="radio"]:checked + label::after {
   transform: translateX(10px);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
